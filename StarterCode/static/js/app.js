@@ -31,12 +31,15 @@ function init(data) {
     chart(names[0], data);  
 }
 
+
 function chart(value, data) {
     // access the 'data' variable here
     let samples = data.samples;
     let filterValue = samples.filter(id => id.id === value)[0];
     console.log(filterValue);
 
+    
+    
     let trace1 = {
         x: filterValue.sample_values.slice(0, 10).reverse(),
         y: filterValue.otu_ids.map(id => `OTU ${id}`).slice(0, 10).reverse(),
@@ -49,7 +52,7 @@ function chart(value, data) {
     let barData = [trace1];
 
     let layout = {
-        title: "Top 10 OTUs ID",
+        title: "Top 10 OTUs found",
         margin: {
             l: 100,
             r: 100,
@@ -79,11 +82,26 @@ function chart(value, data) {
     let bubbleLayout = {
         title: "OTU IDs vs Sample Values",
         height: 600,
-        width: 600
+        width: 1000
     };
 
     // Render the plot to the div tag with id "bubble"
     Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+
+valueInt = parseInt(value)    
+    let metadataInfo = d3.select("#sample-metadata");
+    let metadata = data.metadata;
+    let filterData = metadata.filter(id => id.id === valueInt)[0];
+    console.log(filterData);
+    
+    // Clear existing content in metadataInfo
+    metadataInfo.html("");
+    
+    // Append information from filterData to metadataInfo
+    Object.entries(filterData).forEach(([key, value]) => {
+        metadataInfo.append("p").text(`${key}: ${value}`);
+    });
+
 }
 
 // Call the init function to set up the dropdown menu
