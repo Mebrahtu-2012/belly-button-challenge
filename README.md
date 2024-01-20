@@ -30,9 +30,13 @@ You are welcome to create any layout that suits your dashboard preferences.
 Updates:
 
 Update all the plots when a new sample is selected.
+
 Additional Information
+
 Web Link: https://mebrahtu-2012.github.io/belly-button-challenge/
+
 References:
+
 My study group
 Tutoring
 Office hour with instructor
