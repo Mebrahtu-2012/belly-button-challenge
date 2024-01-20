@@ -34,6 +34,6 @@ Explore the **Belly Button Biodiversity dataset** through an interactive dashboa
   - [JavaScript forEach](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/)
   - [Plotly Bubble Charts](https://plotly.com/javascript/bubble-charts/)
 
-For questions or feedback, feel free to reach out!
+
 
 
