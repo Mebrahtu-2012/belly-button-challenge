@@ -1,34 +1,39 @@
-# belly-button-challenge
+# Belly Button Biodiversity Dashboard
 
-ASSIGNMENT
+## Overview
 
-In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site., which catalogs the microbes that colonize human navels.
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+Explore the **Belly Button Biodiversity dataset** through an interactive dashboard. Identify top operational taxonomic units (OTUs) and visualize microbial data.
 
-Use the D3 library to read in samples.json from the URL https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json.
+## Instructions
 
-Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+1. **Data Source:**
+   - Use D3 to load data from [samples.json](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json).
 
-Use sample_values as the values for the bar chart.
+2. **Bar Chart:**
+   - Create a horizontal bar chart with a dropdown for the top 10 OTUs.
+   - Use `sample_values` for bar heights and `otu_ids` for labels.
 
-Use otu_ids as the labels for the bar chart.
+3. **Bubble Chart:**
+   - Design a bubble chart with `otu_ids` (x), `sample_values` (y), size (sample_values), color (otu_ids), and text (otu_labels).
 
-Create a bubble chart that displays each sample.
+4. **Sample Metadata:**
+   - Display individual demographic information from the metadata JSON.
 
-Use otu_ids for the x values.
+5. **Dashboard Layout:**
+   - Create a personalized dashboard layout.
 
-Use sample_values for the y values.
+6. **Updates:**
+   - Dynamically update plots when selecting a new sample.
 
-Use sample_values for the marker size.
+## Additional Information
 
-Use otu_ids for the marker colors.
+- **Web Link:** [https://mebrahtu-2012.github.io/belly-button-challenge/](https://mebrahtu-2012.github.io/belly-button-challenge/)
+- **References:**
+  - Study group, tutoring, office hour
+  - [Plotly Colorscales](https://plotly.com/javascript/colorscales/)
+  - [JavaScript forEach](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/)
+  - [Plotly Bubble Charts](https://plotly.com/javascript/bubble-charts/)
 
-Use otu_labels for the text values.
-
-Display the sample metadata, i.e., an individual's demographic information.
-
-Display each key-value pair from the metadata JSON object somewhere on the page.
-
-Update all the plots when a new sample is selected. Additionally, you are welcome to create any layout that you would like for your dashboard.
+For questions or feedback, feel free to reach out!
 
 
