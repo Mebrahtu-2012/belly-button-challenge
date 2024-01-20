@@ -32,14 +32,13 @@ Updates:
 Update all the plots when a new sample is selected.
 
 Additional Information
-
 Web Link: https://mebrahtu-2012.github.io/belly-button-challenge/
 
 References:
-
 My study group
 Tutoring
 Office hour with instructor
-Plotly Colorscales
-JavaScript forEach Example
-Plotly Bubble Charts
+https://plotly.com/javascript/bubble-charts/
+https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/
+https://plotly.com/javascript/colorscales/
+chatgbt for debuging 
