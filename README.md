@@ -31,4 +31,4 @@ Display each key-value pair from the metadata JSON object somewhere on the page.
 
 Update all the plots when a new sample is selected. Additionally, you are welcome to create any layout that you would like for your dashboard.
 
-Here is a link to the dashboard: file:///C:/Users/woini/OneDrive/Desktop/belly-button-challenge/StarterCode/index.html
+
